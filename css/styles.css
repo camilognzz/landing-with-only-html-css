@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Mr Eaves XL Mod";
+  src: url("ruta/a/MrEavesXLMod-Regular.woff2") format("woff2"),
+    url("ruta/a/MrEavesXLMod-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mr Eaves XL Mod OT, Book";
+  src: url("path/to/font.woff2") format("woff2"),
+    url("path/to/font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --rh-white: #ffffff; /* Definición de la variable */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--rh-white) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+/* Page Container */
+.page-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 77px 139px;
+  background-color: #ffffff;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 164px;
+  height: 40px;
+  /* UI Properties */
+  background: transparent url("img/RH Logo.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: left;
+  gap: 60px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-family: "Mr Eaves XL Mod", sans-serif;
+  color: #666766; /* Color del texto */
+  letter-spacing: 0px;
+  opacity: 1; /* Opacidad completa */
+  text-align: left;
+}
+
+.menu-items li a:hover {
+  color: #dc5027;
+  border-bottom: 1px solid #dc5027; /* Línea debajo del enlace */
+}
+
+/* Button */
+.menu-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 137px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #dc5027;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #a43c1d;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 4px;
+}
+
+.text-left {
+  background-color: #dc5027; /* Naranja */
+  color: white;
+  width: 507px;
+  height: 578px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 42px;
+  font-family: "Mr Eaves XL Mod OT, Book";
+  color: #ffffff;
+  width: 316px;
+  height: 92px;
+  padding: 0px 95px;
+  position: relative;
+  top: 6px; 
+}
+
+.section-description {
+  font-size: 24px;
+  color: #faebd7;
+  font-family: "Mr Eaves XL Mod OT, Reg";
+  width: 350px;
+  height: 173px;
+  padding-left: 96px;
+  padding-right: 61px;
+  line-height: 1.5; /* Ajusta la altura entre líneas */
+  height: 9em; /* Aproximadamente 6 líneas de texto */
+  overflow: hidden; /* Oculta cualquier texto que se desborde */
+  position: relative;
+  top: -20px; /* Ajusta el valor para moverlo hacia arriba */
+  margin-bottom: 20px;
+}
+
+.view-gallery {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 105px;
+  height: 14px;
+  padding-left: 96px;
+}
+
+.view-gallery:hover {
+  border-bottom: 1px solid #FFFFFF; /* Línea debajo del enlace */
+}
+
+.image-right img {
+  width: 859px;
+  height: 578px;
+  object-fit: contain;
+}
