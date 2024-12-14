@@ -1,21 +1,11 @@
-@font-face {
-  font-family: "Mr Eaves XL Mod";
-  src: url("ruta/a/MrEavesXLMod-Regular.woff2") format("woff2"),
-    url("ruta/a/MrEavesXLMod-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mr Eaves XL Mod OT, Book";
-  src: url("path/to/font.woff2") format("woff2"),
-    url("path/to/font.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-:root {
-  --rh-white: #ffffff; /* Definición de la variable */
-}
+@import url(https://db.onlinewebfonts.com/c/7a2ee02a7926e4160b764f2469ae8507?family=MrEavesXLModOT-Reg);
+@import url(https://db.onlinewebfonts.com/c/55730af0e8c910cc0c1e03d4b2785dfe?family=MrEavesXLModOT-Bold);
+@import url(https://db.onlinewebfonts.com/c/16c6dc17a3cd6b03c2fa576e3b36cc05?family=MrEavesXLModOT-Book);
+@import url(https://db.onlinewebfonts.com/c/16c6dc17a3cd6b03c2fa576e3b36cc05?family=MrEavesXLModOT-RegItalic);
 
+:root {
+  --rh-white: #ffffff; 
+}
 html,
 body {
   margin: 0;
@@ -27,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Page Container */
 .page-container {
   position: absolute;
   top: 0px;
@@ -36,7 +25,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -45,7 +33,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Logo Container */
 .logo-container {
   display: flex;
   align-items: center;
@@ -55,12 +42,10 @@ body {
 .logo {
   width: 164px;
   height: 40px;
-  /* UI Properties */
   background: transparent url("img/RH Logo.svg") 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
-/* Menu */
 .menu {
   display: flex;
   align-items: left;
@@ -78,25 +63,25 @@ body {
 
 .menu-items li a {
   text-decoration: none;
-  font-size: 16px; /* Tamaño de la fuente */
-  font-family: "Mr Eaves XL Mod", sans-serif;
-  color: #666766; /* Color del texto */
+  font-size: 20px; 
+  font-family: "MrEavesXLModOT-Reg";
+  color: #666766; 
   letter-spacing: 0px;
-  opacity: 1; /* Opacidad completa */
+  opacity: 1; 
   text-align: left;
 }
 
 .menu-items li a:hover {
   color: #dc5027;
-  border-bottom: 1px solid #dc5027; /* Línea debajo del enlace */
+  border-bottom: 1px solid #dc5027; 
 }
 
-/* Button */
 .menu-button {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   width: 137px;
   height: 46px;
+  font-family: "MrEavesXLModOT-Bold";
   color: #ffffff;
   background-color: #dc5027;
   border: none;
@@ -127,47 +112,376 @@ body {
 }
 
 .section-title {
-  font-size: 42px;
-  font-family: "Mr Eaves XL Mod OT, Book";
+  font-size: 48px;
+  font-family: "MrEavesXLModOT-Book";
+  font-weight: 200;
   color: #ffffff;
   width: 316px;
   height: 92px;
   padding: 0px 95px;
   position: relative;
-  top: 6px; 
+  top: 6px;
 }
 
 .section-description {
   font-size: 24px;
   color: #faebd7;
-  font-family: "Mr Eaves XL Mod OT, Reg";
+  font-family: "MrEavesXLModOT-Reg";
   width: 350px;
   height: 173px;
   padding-left: 96px;
   padding-right: 61px;
-  line-height: 1.5; /* Ajusta la altura entre líneas */
-  height: 9em; /* Aproximadamente 6 líneas de texto */
-  overflow: hidden; /* Oculta cualquier texto que se desborde */
+  line-height: 1.5; 
+  height: 9em; 
+  overflow: hidden; 
   position: relative;
-  top: -20px; /* Ajusta el valor para moverlo hacia arriba */
+  top: -20px; 
   margin-bottom: 20px;
+}
+
+.div-view-gallery {
+  width: 160px;
+  height: 14px;
+  padding-left: 96px;
+  display: flex; 
+  align-items: center; 
+}
+
+.view-gallery-container {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent; 
+}
+
+.view-gallery-container:hover {
+  border-bottom: 1px solid #ffffff; 
 }
 
 .view-gallery {
   font-size: 14px;
+  font-family: "MrEavesXLModOT-Reg";
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
-  width: 105px;
-  height: 14px;
-  padding-left: 96px;
+  display: inline-block;
 }
 
-.view-gallery:hover {
-  border-bottom: 1px solid #FFFFFF; /* Línea debajo del enlace */
+.angle-union {
+  font-size: 16px; 
+  color: #ffffff; 
+  display: inline-block;
+  font-weight: bold; 
 }
 
 .image-right img {
   width: 859px;
   height: 578px;
   object-fit: contain;
+}
+
+.mission-focus-section {
+  text-align: center;
+  padding: 80px 139px;
+  background-color: #ffffff; 
+  margin-bottom: 60px;
+}
+
+.mission-focus-title {
+  font-size: 20px;
+  font-family: "MrEavesXLModOT-Reg";
+  font-weight: 100;
+  color: #cdcccb; 
+  width: 1088px;
+  height: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.mission-focus-description {
+  color: #666766; 
+  font-family: "MrEavesXLModOT-Book";
+  font-size: 43px;
+  font-weight: 100;
+  letter-spacing: 0px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 750px;
+  height: 165px;
+}
+
+.different-color-description {
+  color: #5f8db5;
+}
+
+.looking-back-section {
+  background: #faebd7;
+  height: 619px;
+}
+
+.titles-looking-back-section {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 60px 139px;
+}
+
+.right-container {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.logo-instagram {
+  width: 24px;
+  height: 24px;
+}
+
+.left-text {
+  font-family: "MrEavesXLModOT-Reg";
+  font-size: 36px;
+  text-align: left;
+  color: #dc5027;
+  width: 444px;
+  height: 36px;
+}
+
+.right-text {
+  font-family: 'MrEavesXLModOT-RegItalic';
+  font-size: 24px;
+  text-align: right;
+  color: #666766;
+  transform: skewX(-10deg);
+  width: 265px;
+  height: 24px;
+}
+
+.collage-container {
+  display: grid;
+  grid-template-columns: 415px 444px 444px; 
+  grid-template-rows: repeat(4, auto); 
+  gap: 4px; 
+}
+
+.left-column {
+  grid-column: 1; 
+  grid-row: span 2; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
+}
+
+.bottom-left {
+  display: flex;
+  gap: 4px; 
+}
+
+.center-column {
+  grid-column: 2; 
+  grid-row: span 4; 
+}
+
+.right-column {
+  grid-column: 3; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
+}
+
+.top-right,
+.bottom-right {
+  display: flex;
+  gap: 4px; 
+}
+
+.collage-image {
+  object-fit: cover; 
+}
+
+.collage-image-1 {
+  grid-column: 1; 
+  width: 415px;
+  height: 287px;
+}
+
+.collage-image-2-3 {
+  width: 206px;
+  height: 166px;
+}
+
+.collage-image-4 {
+  grid-column: 2; 
+  width: 444px;
+  height: 457px;
+}
+
+.collage-image-5 {
+  width: 200px;
+  height: 227px;
+}
+
+.collage-image-6 {
+  width: 307px;
+  height: 227px;
+}
+
+.collage-image-7 {
+  width: 368px;
+  height: 227px;
+}
+
+.collage-image-8 {
+  width: 139px;
+  height: 227px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 139px; 
+}
+
+.contact-text {
+  width: 444px;
+}
+
+.contact-text p {
+  font-size: 30px;
+  font-family: "MrEavesXLModOT-Reg";
+  color: #5f8db5;
+  text-align: left;
+}
+
+.contact-input-container {
+  width: 610px;
+  height: 24px; 
+}
+
+.input-with-arrow {
+  display: flex; 
+  align-items: center;
+  width: 100%;
+}
+
+.contact-input {
+  width: calc(100% - 40px); 
+  padding: 10px;
+  border: none; 
+  border-bottom: 1px solid #cdcccb; 
+  font-size: 16px;
+  outline: none; 
+}
+
+.contact-input::placeholder {
+  color: #cdcccb;
+  font-style: italic;
+}
+
+.arrow-button {
+  width: 40px; 
+  height: 100%; 
+  border: none;
+  background-color: #FFFFFF; 
+  color: #DC5027; 
+  font-size: 60px;
+  font-weight: 100;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-section {
+  background-color: #dc5027;
+  height: 220px;
+  padding: 82px 139px; 
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 8px; 
+}
+
+.logo-footer {
+  width: 164px;
+  height: 40px;
+}
+
+.support-button {
+  color: #666766;
+  font-family: "MrEavesXLModOT-Bold";
+  width: 137px;
+  height: 46px;
+  font-size: 16px;
+  padding: 10px 20px; 
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background: #faebd7;
+  border-radius: 0px; 
+  cursor: pointer;
+}
+
+.support-button:hover {
+  background-color: #A43C1D;
+  color: #FFFFFF;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  margin-bottom: 32px;
+  padding-top: 20px; 
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold; 
+  margin-bottom: 12px; 
+}
+
+.footer-item,
+.footer-list li {
+  font-size: 16px; 
+  color: #ffffff;
+  margin-bottom: 12px; 
+  font-family: "MrEavesXLModOT-Reg";
+  display: inline-block;
+}
+.footer-item:hover,
+.footer-list li:hover {
+  border-bottom: 2px solid #ffffff; 
+}
+.footer-items-a {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-family: "MrEavesXLModOT-Reg";
+  margin-bottom: 10px; 
+  display: inline-block;
+}
+.footer-items-a:hover {
+  border-bottom: 2px solid #ffffff; 
+}
+
+.footer-list li a:hover {
+  color: #dc5027; 
+}
+
+.below {
+  width: 100%; 
+  height: 0; 
+  border: 5px solid #94351e; 
+  opacity: 1;
 }
